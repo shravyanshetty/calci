@@ -1,8 +1,44 @@
 body{
     background-color: darkgrey;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0; 
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
 }
 
 * { 
     box-sizing: border-box;
  }
+
+ .calc {
+     width: min(360px, 92vw);
+      display: grid;
+       gap: 20px;
+     }
+
+.keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 9px; 
+    
+}
+
+button{
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding:10px;
+}
+
+#display{
+    border-radius: 5px;
+    padding:15px;
+    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    box-shadow: rgba(42, 40, 40,10);
+ }
+
+
